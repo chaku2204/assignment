@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="year">Select a year:</label>
+    <select id="year" name="year" onchange="filterByYear()">
+      <option value="">All Years</option>
+   </select>
+
+  <!-- Display filtered results here -->
+       
+  <script>
+        var selectYear = document.getElementById("year");
+
+// Generate options for years 1900 to 2099
+            for (var year = 1900; year <= 2099; year++) {
+            var option = document.createElement("option");
+            option.value = year;
+            option.text = year;
+            selectYear.appendChild(option);
+            }
+
+            function filterByYear() {
+            var selectedYear = selectYear.value;
+         }
+
+  </script>
+  
+</body>
+</html>

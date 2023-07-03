@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .filter-container {
+    margin-bottom: 20px;
+  }
+  
+  .filter-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .filter-select {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .dashboard-content {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  canvas {
+    max-width: 100%;
+  }

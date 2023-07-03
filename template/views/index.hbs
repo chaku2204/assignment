@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+    
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+          <div class="filter-container">
+            <label for="category-filter" class="filter-label">end_year:</label>
+            <select id="category-filter" class="filter-select">
+              <option value="all_year">All year</option>
+            </select>
+          </div>
+          <div class="filter-container">
+            <label for="status-filter" class="filter-label">Topics:</label>
+            <select id="status-filter" class="filter-select">
+              <option value="">All</option>
+             
+            </select>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="dashboard-content">
+            <h2>Welcome to the Dashboard</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+    <script src="/javscript/chart.js"></script>
+    <script>
+         var selectYear = document.getElementById("category-filter");
+
+
+            for (var year = 1900; year <= 2099; year++) {
+                var option = document.createElement("option");
+                option.value = year;
+                option.text = year;
+                selectYear.appendChild(option);
+            }
+
+            function filterByYear() {
+            var selectedYear = selectYear.value;
+            }
+    </script>
+    <script src="/javscript/topic.js"></script>
+
+    
+</body>
+</html>
