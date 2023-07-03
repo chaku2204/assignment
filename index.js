@@ -3,7 +3,7 @@ const app = express();
 const hbs = require("hbs");
 const cors = require('cors');
 app.use(cors());
-const port = 3000;
+const port = process.env.PORT || 3000;
 const { MongoClient } = require('mongodb');
 const path = require('path');
 const mongoose = require('mongoose');
